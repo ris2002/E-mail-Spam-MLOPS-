@@ -1,5 +1,5 @@
 .env
 dags/__pycache__
 steps/__pycache__/
-myenv/
+env/
 logs/
