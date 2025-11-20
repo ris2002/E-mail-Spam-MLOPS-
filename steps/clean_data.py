@@ -1,6 +1,6 @@
 import logging
 from typing import Tuple
-from src.cleaning_data import PreProcessStrategy
+from cleaning_data import PreProcessStrategy
 from typing_extensions import Annotated
 import numpy as np
 import pandas as pd

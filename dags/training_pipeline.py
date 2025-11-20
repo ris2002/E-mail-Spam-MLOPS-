@@ -10,7 +10,8 @@ def training_pipeline():
 pipeline=training_pipeline()'''
 
 from airflow.decorators import dag, task
-from steps.ingest_data import ingest_data  # your existing function
+from ingest_data import ingest_data
+from clean_data import vectorized_and_split_data
 import pandas as pd
 import logging
 
