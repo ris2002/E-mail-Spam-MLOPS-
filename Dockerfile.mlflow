@@ -1,0 +1,13 @@
+FROM python:3.10-slim
+
+WORKDIR /mlflow
+ENV BACKEND_URI=sqlite:///project1_mlflow.db
+
+RUN pip install --no-cache-dir mlflow
+
+ENV ARTIFACT_ROOT=/mlflow/artifacts
+
+
+EXPOSE 5050
+
+CMD mlflow ui --backend-store-uri $BACKEND_URI --host 0.0.0.0 --port 5050 --allowed-hosts="*"

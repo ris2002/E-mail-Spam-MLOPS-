@@ -9,6 +9,8 @@ What improvements and what learning I am going to do over the 2nd one in this cu
 2]Gradient Boosting␣␣
 3]XGB␣␣
 4]Cat Boosting␣␣
+* I am going to run more tha one models in same pipeline
+
 And this will be the another revison of how mlops works
 ## Errors encountered while setting and runing up AirFlow
 1]Module not found error-Had a hard time figuring out how to import a function from another folder to thhe dags folder␣␣
@@ -81,6 +83,11 @@ Save them to disk or cloud storage and return only file paths in XCom.
 what happened is I am not able to track the other tasks within that task
 * Var when given in dag fuction gets converted to Xcom
 Better to import the dataset inside the dag funnc instead of giving the dataset instead of declaring  it as a var in dag func.
+
+* It is important to note that I was able to run the dag with installing requirements.txt from docker as basic modules like sklearn,pandas and numpy are already pre installed in the airflow so when I ran dag previously I didnot need to installl them . However I faced error whhen I started using mlflow. So the safe thing I thought was use thee docker to innstall all requirements.txt ffile.
+there are also some changes sto be done in thhe docker compose file, in x-airflow-common: section I need to comment out the image and un comment out the 'build: .'  after that build thee docker-compose file and restar it
+
+
 
 ----------
 ## Data Cleaning

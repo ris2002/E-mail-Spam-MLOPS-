@@ -7,6 +7,7 @@ import pandas as pd
 from airflow.decorators import dag, task
 import pickle
 
+
 @task
 def vectorized_and_split_data(df:pd.DataFrame)->Tuple[
         Annotated[np.ndarray,"X_Train"],
