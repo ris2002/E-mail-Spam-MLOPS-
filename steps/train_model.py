@@ -54,6 +54,8 @@ def model_training():
             model_uri=f'runs:/{run_id}/gb_boost',
             name='GB_boost_model')
 
+        logging.info('SUCCCESSFULLY TRAINED AND REGISTERED THE MODEL')
+
 
         
 

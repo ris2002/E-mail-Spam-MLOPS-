@@ -31,10 +31,10 @@ def evaluate_model():
         gb_y_pred_model=gb_model.predict(x_test)
 
         Evaluation=Evaluation_Techniques()
-        acc_score_ada_model=Evaluation.acccuracy_score(ada_y_pred_model,y_test)
-        acc_score_gb_model=Evaluation.acccuracy_score(gb_y_pred_model,y_test)
-        ada_TN,ada_TP,ada_FN,ada_FP=Evaluation.confusion_matrix(ada_y_pred_model,y_test)
-        gb_TN,gb_TP,gb_FN,gb_FP=Evaluation.confusion_matrix(gb_y_pred_model,y_test)
+        acc_score_ada_model=Evaluation.accuracy_score_function(ada_y_pred_model,y_test)
+        acc_score_gb_model=Evaluation.accuracy_score_function(gb_y_pred_model,y_test)
+        ada_TN,ada_TP,ada_FN,ada_FP=Evaluation.confusion_matrix_function(ada_y_pred_model,y_test)
+        gb_TN,gb_TP,gb_FN,gb_FP=Evaluation.confusion_matrix_function(gb_y_pred_model,y_test)
 
 
 

@@ -2,7 +2,6 @@
   "ada_boost": {
     "n_estimators": 50,
     "learning_rate": 0.5,
-    "algorithm": "SAMME",
     "random_state": 42
   },
 
