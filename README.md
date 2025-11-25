@@ -45,6 +45,7 @@ This has to be done so that the docker can identify the path of the unmounted fo
 
 **(It is important to note that since we have mounted the folders the root folder for all python scripts remain the same irrespective of which folders they are present locally so if you want to import a func directly write `'from script_name import function'` instead of directly writig the local path of it )**
 
+* When defining an Apache Airflow pipeline using @dag and @task decorators, a common issue arises when tasks (imported Python functions) fail to execute in the intended sequential order. The root cause is attempting to rely on the natural top-down flow of Python function calls within the DAG definition, rather than explicitly defining the task dependencies that the Airflow scheduler requires. The solution involves capturing the result of each @task call as a task instance variable and using the functional API's bitshift operator (>>) to build a directed graph (e.g., task_a >> task_b >> task_c), thus explicitly instructing Airflow on the required execution sequence and ensuring reliable pipeline orchestration
 ---
 
 ## Some more errors encoutered while using Airflow
@@ -162,4 +163,5 @@ evaluate_model()
 * Airflow structure working 
 * Integration of airflow with mlflow
 * Boosting models
+* The module versions should be same in traing and deployment sencario
 

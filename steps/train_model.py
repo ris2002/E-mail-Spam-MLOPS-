@@ -33,9 +33,9 @@ def model_training():
         gb_boost_model=Gradient_Boosting_Class()
         trained_ada_boost_model=ada_boost_model.fitting_the_model(x_train,y_train,**config['ada_boost'])
         trained_gb_model=gb_boost_model.fitting_the_model(x_train,y_train,**config['gradient_boost'])
-        with open('/opt/airflow/config/ada_trained_model.pkl','wb') as f:
+        with open('/opt/airflow/config/ada_boost_trained_model.pkl','wb') as f:
             pickle.dump(trained_ada_boost_model,f)
-        with open('/opt/airflow/config/gb_trained_model.pkl','wb') as f:
+        with open('/opt/airflow/config/gb_boost_trained_model.pkl','wb') as f:
             pickle.dump(trained_gb_model,f)
     
         

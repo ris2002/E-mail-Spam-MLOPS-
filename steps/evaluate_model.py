@@ -18,9 +18,9 @@ def evaluate_model():
     mlflow.set_tracking_uri('http://e-mail-spam-mlops--mlflow-server-1:5050')
     mlflow.set_experiment("email_spam_detection")
     try:
-        with open('/opt/airflow/config/ada_trained_model.pkl','rb') as f:
+        with open('/opt/airflow/config/ada_boost_trained_model.pkl','rb') as f:
             ada_model=pickle.load(f)
-        with open('/opt/airflow/config/gb_trained_model.pkl','rb') as f:
+        with open('/opt/airflow/config/gb_boost_trained_model.pkl','rb') as f:
             gb_model=pickle.load(f)
         with open('/opt/airflow/config/x_test.pkl','rb') as f:
             x_test=pickle.load(f)

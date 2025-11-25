@@ -44,4 +44,9 @@ class PreProcessStrategy:
             raise e
     
     def clense_production_data(self,text:str):
-        pass
+        lower_text=text.lower()
+        cleaned_text=re.sub(r'(?i)^subject:\s*','',lower_text)
+        with open('config/tfidvectorizer.pkl','rb') as f:## docker location
+            tfid=pickle.load(f)
+        transformed_question=tfid.transform([cleaned_text])
+        return transformed_question

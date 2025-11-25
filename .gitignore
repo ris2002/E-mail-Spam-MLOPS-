@@ -1,5 +1,10 @@
 .env
 dags/__pycache__
 steps/__pycache__/
-env/
+myvenv/
 logs/
+src/__pycache__
+dags/__pycache__
+steps/__pycache__
+*.pkl
+config/.DS_Store
