@@ -1,6 +1,6 @@
 # E-mail-Spam-MLOPS (2weeks)
 
-This is my 3rd MLOPs project. I am taking ref from my 2nd one (https://github.com/ris2002/Sentiment-Analysis-MLOPS.git). In the second one I have done the mlops using zenml, traning has been done using Logistic Regression and deployment has been done using Fast api.
+This is my 3rd MLOPs project. Some architectural ideas and workflow patterns are adapted from my earlier project: (https://github.com/ris2002/Sentiment-Analysis-MLOPS.git). In the second one I have done the mlops using zenml, traning has been done using Logistic Regression and deployment has been done using Fast api.
 
 What improvements and what learning I am going to do over the 2nd one in this current project –
 
