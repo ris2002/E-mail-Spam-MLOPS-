@@ -6,6 +6,18 @@ What improvements and what learning I am going to do over the 2nd one in this cu
 
 * Usage of Airflow  
 * Using kubernetes  
+(Basic topics like -
+What is Kubernetes
+
+K8s Architecture (high-level)
+
+Main Components (Pod, Deployment, Service, etc.)
+
+Minikube + Kubectl setup
+
+Main kubectl commands
+
+YAML Configuration File)
 * Zenml had inbuilt mlflow so I am going to use mlflow seperately  
 * Learning and using 4 boosting classification models –  
   1] AdaBoost  
