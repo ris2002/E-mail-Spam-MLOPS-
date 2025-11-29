@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: email-spam-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: email-spam-app
+  template:
+    metadata:
+      labels:
+        app: email-spam-app
+    spec:
+      containers:
+      - name: email-spam-app
+        image: email_spam_app:latest   # your image
+        imagePullPolicy: IfNotPresent #if locally deployed
+        ports:
+        - containerPort: 8000          # change to the port your app exposes 'need to match the port docker exposes'
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: email-spam-service
+spec:
+  type: NodePort
+  selector:
+    app: email-spam-app
+  ports:
+  - protocol: TCP
+    port: 8000      # service port need to match the port docker exposes
+    targetPort: 8000 # container port need to match the port docker exposes
