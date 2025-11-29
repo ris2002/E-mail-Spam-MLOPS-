@@ -1,10 +1,11 @@
 # E-mail-Spam-MLOPS (2weeks)
 
-This is my 3rd MLOPs project. I am taking ref from my 2nd one (https://github.com/ris2002/Sentiment-Analysis-MLOPS.git). In the second one I have done the mlops using zenml, traning has been done using Logistic Regression and deployment has been done using Fast api.
+This is my 3rd MLOPs project. Some architectural ideas and workflow patterns are adapted from my earlier project: (https://github.com/ris2002/Sentiment-Analysis-MLOPS.git). In my earlier project  I have done the mlops using zenml, traning has been done using Logistic Regression and deployment has been done using Fast api.
 
 What improvements and what learning I am going to do over the 2nd one in this current project –
 
 * Usage of Airflow  
+<<<<<<< HEAD
 * Using kubernetes  
 (Learning of Basic topics like -
 What is Kubernetes
@@ -13,6 +14,9 @@ Main Components (Pod, Deployment, Service, etc.)
 Minikube + Kubectl setup
 Main kubectl commands
 YAML Configuration File) and implementaton
+=======
+* Using kubernetes(Basic Implementation)
+>>>>>>> 301389542d96583e44f650af3d8d6429cbb0bccd
 * Zenml had inbuilt mlflow so I am going to use mlflow seperately  
 * Learning and using 4 boosting classification models –  
   1] AdaBoost  
