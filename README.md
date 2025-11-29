@@ -5,7 +5,7 @@ This is my 3rd MLOPs project. Some architectural ideas and workflow patterns are
 What improvements and what learning I am going to do over the 2nd one in this current project –
 
 * Usage of Airflow  
-* Using kubernetes  
+* Using kubernetes(Basic Implementation)
 * Zenml had inbuilt mlflow so I am going to use mlflow seperately  
 * Learning and using 4 boosting classification models –  
   1] AdaBoost  
