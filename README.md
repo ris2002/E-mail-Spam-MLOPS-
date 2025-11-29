@@ -21,8 +21,7 @@ YAML Configuration File) and implementaton
 * Learning and using 4 boosting classification models –  
   1] AdaBoost  
   2] Gradient Boosting  
-  3] XGB  
-  4] Cat Boosting  
+  
 * I am going to run more tha one models in same pipeline  
 
 And this will be the another revison of how mlops works
